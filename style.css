@@ -50,7 +50,7 @@ p{
 }
 
 .section-title span{
-    color: crimson;
+    color: rgb(109, 167, 134);
 }
 
 .cta{
@@ -58,7 +58,7 @@ p{
     padding: 10px 30px;
     color: white;
     background-color: transparent;
-    border: 2px solid crimson;
+    border: 2px solid rgb(109, 167, 134);
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
@@ -69,7 +69,7 @@ p{
 
 .cta:hover{
     color: white;
-    background-color: crimson;
+    background-color: rgb(109, 167, 134);
 }
 
 .brand h1{
@@ -79,7 +79,7 @@ p{
 }
 
 .brand h1 span{
-    color: crimson;
+    color: rgb(109, 167, 134);
 }
 
 /*------------------------------- Header Section----------------------------------*/
@@ -160,7 +160,7 @@ p{
 }
 
 #header .nav-list ul li:hover a{
-    color: crimson;
+    color: rgb(109, 167, 134);
 }
 
 #header .hamburger{
@@ -230,7 +230,7 @@ p{
 
 /*------------------------------- Hero Section -----------------------------------*/
 #hero{
-    background-image: url(./images/background.jpg);
+    background-image: url(https://i.pinimg.com/originals/21/30/28/213028019397e33af974fb5117ddd9e8.gif);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -285,7 +285,7 @@ p{
     left: 0;
     height: 100%;
     width: 0;
-    background-color: crimson;
+    background-color: rgb(109, 167, 134);
     animation: text_reveal_box 1s ease;
     animation-delay: .5s;
 }
@@ -302,9 +302,73 @@ p{
     animation-delay: 2.5s;
 }
 
-/* End Hero Section */
+/*----------------------------------------------- End Hero Section -----------------------------------------*/
 
-/* Service Section */
+
+/*------------------------------------------------ About Section -------------------------------------------*/
+#about{
+    background-color: rgb(250, 224, 228);
+}
+
+#about .about{
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+#about .col-left{
+    width: 250px;
+    height: 360px;
+}
+
+#about .col-right{
+    width: 100%;
+}
+
+#about .col-right h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+}
+
+#about .col-right p{
+    margin-bottom: 20px;
+}
+
+#about .col-right .cta{
+    color: black;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    font-size: 2rem;
+}
+
+#about .col-left .about-img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: 10px solid rgb(250, 224, 228);
+}
+
+#about .col-left .about-img::after{
+    content: '';
+    position: absolute;
+    left: -33px;
+    top: 19px;
+    height: 98%;
+    width: 98%;
+    border: 7px solid rgb(109, 167, 134);
+    z-index: -1;
+}
+/*-------------------------------------- End About Section ----------------------------------------*/
+
+/*---------------------------------------- Service Section -----------------------------------------*/
+#services{
+    background-color: rgb(250, 224, 228);
+}
+
 #services .services{
     flex-direction: column;
     text-align: center;
@@ -368,9 +432,13 @@ p{
     line-height: 1.9rem;
 }
 
-/* End Service Section */
+/*-------------------------------------------- End Service Section -----------------------------------*/
 
-/* Projects Section */
+/*----------------------------------------------- Projects Section ------------------------------------------*/
+#projects{
+    background-color: rgb(250, 224, 228);
+}
+
 #projects .projects{
     flex-direction: column;
     max-width: 1200px;
@@ -453,64 +521,14 @@ p{
     transform: scale(1.1);
 }
 
-/* End Projects Section */
+/*-------------------------------------- End Projects Section -----------------------------------*/
 
-/* About Section */
-#about .about{
-    flex-direction: column-reverse;
-    text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 100px 20px;
+
+/*------------------------------------------ Contact Section ----------------------------------------*/
+#contact{
+    background-color: rgb(250, 224, 228);
 }
 
-#about .col-left{
-    width: 250px;
-    height: 360px;
-}
-
-#about .col-right{
-    width: 100%;
-}
-
-#about .col-right h2{
-    font-size: 1.8rem;
-    font-weight: 500;
-    letter-spacing: .2rem;
-    margin-bottom: 10px;
-}
-
-#about .col-right p{
-    margin-bottom: 20px;
-}
-
-#about .col-right .cta{
-    color: black;
-    margin-bottom: 50px;
-    padding: 10px 20px;
-    font-size: 2rem;
-}
-
-#about .col-left .about-img{
-    height: 100%;
-    width: 100%;
-    position: relative;
-    border: 10px solid white;
-}
-
-#about .col-left .about-img::after{
-    content: '';
-    position: absolute;
-    left: -33px;
-    top: 19px;
-    height: 98%;
-    width: 98%;
-    border: 7px solid crimson;
-    z-index: -1;
-}
-/* End About Section */
-
-/* Contact Section */
 #contact .contact{
     flex-direction: column;
     max-width: 1200px;
@@ -561,7 +579,7 @@ p{
 
 /*----------------------------------- Footer ----------------------------------------*/
 #footer{
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-color: black;
 }
 
 #footer .footer{
@@ -591,14 +609,14 @@ p{
     margin: 0 5px;
 }
 
-#footer .social-item img{
+/* #footer .social-item img{
     filter: grayscale(1);
     transition: .3s ease filter;
-}
+} */
 
-#footer .social-item:hover img{
+/* #footer .social-item:hover img{
     filter: grayscale(0);
-}
+} */
 
 #footer p{
     color: white;
@@ -637,7 +655,7 @@ p{
 }
 @keyframes text_reveal_name{
     100%{
-        color: crimson;
+        color: rgb(109, 167, 134);
         font-weight: 500;
     }
 }
@@ -707,7 +725,7 @@ p{
         top: 34px;
         height: 98%;
         width: 98%;
-        border: 10px solid crimson;
+        border: 10px solid rgb(109, 167, 134);
     }
 
     #about .col-right{
