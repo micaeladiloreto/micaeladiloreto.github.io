@@ -232,7 +232,7 @@ p{
 
 /*------------------------------- Hero Section -----------------------------------*/
 #hero{
-    background-image: url(images/andy-holmes-rCbdp8VCYhQ-unsplash.jpg);
+    background-image: url(images/portBackground.jpg);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -246,7 +246,7 @@ p{
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: darkslategray;
     opacity: .7;
     z-index: -1;
 }
