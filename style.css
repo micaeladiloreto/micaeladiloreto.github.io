@@ -1,5 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=M+PLUS+Code+Latin:wght@300&family=Nunito:wght@200;300;400;600;700&family=PT+Sans&family=Pinyon+Script&family=Playfair+Display:wght@500&family=Quicksand:wght@300&family=Red+Hat+Mono:wght@300&family=Zen+Antique&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=M+PLUS+Code+Latin:wght@300&family=Nunito:wght@200;300;400;600;700&family=PT+Sans&family=Pinyon+Script&family=Playfair+Display:wght@500&family=Quicksand:wght@300&family=Red+Hat+Mono:wght@300&family=Zen+Antique&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&family=Fira+Code:wght@300&family=Meie+Script&family=Petit+Formal+Script&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -8,8 +10,8 @@
 
 html{
     font-size: 10px;
-    font-family: 'Quicksand', sans-serif;    
-    scroll-behavior: smooth;
+    font-family: 'Darker Grotesque', sans-serif;
+         scroll-behavior: smooth;
 }
 
 a{
@@ -50,7 +52,8 @@ p{
 }
 
 .section-title span{
-    color: rgba(209, 161, 149, 0.747);
+    color: #a37c82
+    ;
 }
 
 .cta{
@@ -58,8 +61,7 @@ p{
     padding: 10px 30px;
     color: white;
     background-color: transparent;
-    border: 2px solid rgba(209, 161, 149, 0.747);
-    ;
+    border: 2px solid #a37c82;
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
@@ -70,18 +72,20 @@ p{
 
 .cta:hover{
     color: white;
-    background-color: rgba(209, 161, 149, 0.747);
-    ;
+    background-color: #a37c82;
 }
 
 .brand h1{
-    font-size: 3rem;
-    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    letter-spacing: 0.2rem;
+    /* text-transform: uppercase; */
     color: white
 }
 
 .brand h1 span{
-    color: rgba(209, 161, 149, 0.747);
+    color: #a37c82
+    ;
 }
 
 /*------------------------------- Header Section----------------------------------*/
@@ -138,7 +142,7 @@ p{
     letter-spacing: .2rem;
     text-decoration: none;
     color: white;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     padding: 20px;
     display: block;
 }
@@ -162,7 +166,7 @@ p{
 }
 
 #header .nav-list ul li:hover a{
-    color: rgba(209, 161, 149, 0.747);
+    color: #a37c82;
 }
 
 #header .hamburger{
@@ -232,9 +236,9 @@ p{
 
 /*------------------------------- Hero Section -----------------------------------*/
 #hero{
-    background-image: url(images/portBackground.jpg);
+    background-image: url(images/headback5.jpg);
     background-size: cover;
-    background-position: top center;
+    background-position: bottom;
     position: relative;
     z-index: 1;
 }
@@ -262,6 +266,8 @@ p{
     display: block;
     width: fit-content;
     font-size: 4rem;
+    font-weight: lighter;
+    /* letter-spacing: 0.2rem; */
     position: relative;
     color: transparent;
     animation: text_reveal .5s ease forwards;
@@ -287,7 +293,8 @@ p{
     left: 0;
     height: 100%;
     width: 0;
-    background-color: rgba(209, 161, 149, 0.747);
+    background-color: #a37c82
+    ;
     animation: text_reveal_box 1s ease;
     animation-delay: .5s;
 }
@@ -309,7 +316,7 @@ p{
 
 /*------------------------------------------------ About Section -------------------------------------------*/
 #about{
-    background-color: #F7F7F2;
+    background-color: #f2f1ef;
 }
 
 #about .about{
@@ -329,8 +336,12 @@ p{
     width: 100%;
 }
 
+.about-img img{
+    border-radius: 50%;
+}
+
 #about .col-right h2{
-    font-size: 1.8rem;
+    font-size: 3rem;
     font-weight: 500;
     letter-spacing: .2rem;
     margin-bottom: 10px;
@@ -338,6 +349,7 @@ p{
 
 #about .col-right p{
     margin-bottom: 20px;
+    font-size: 2rem;
 }
 
 #about .col-right .cta{
@@ -351,7 +363,7 @@ p{
     height: 100%;
     width: 100%;
     position: relative;
-    border: 10px solid #F7F7F2;
+    border: 10px solid #f2f1ef;
 }
 
 #about .col-left .about-img::after{
@@ -364,11 +376,12 @@ p{
     border: 7px solid rgb(109, 167, 134);
     z-index: -1;
 }
+
 /*-------------------------------------- End About Section ----------------------------------------*/
 
 /*---------------------------------------- Service Section -----------------------------------------*/
 #services{
-    background-color: #F7F7F2;
+    background-color: #f2f1ef;
 }
 
 #services .services{
@@ -398,10 +411,12 @@ p{
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    height: 300px;
     padding: 30px;
     border-radius: 10px;
-    background-image: url(./images/skills-background.jpg);
+    background-image: url(./images/skillsphoto.jpg);
     background-size: cover;
+    background-position: center;
     margin: 10px 5%;
     position: relative;
     z-index: 1;
@@ -415,7 +430,7 @@ p{
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(60deg,#29323c 0%,#485563 100%);
+    background-image: linear-gradient(60deg,#29323cb6 0%,#485563c5 100%);
     opacity: .9;
     z-index: -1;
 }
@@ -427,18 +442,18 @@ p{
 }
 
 #services .service-item h2{
-    font-size: 1.4rem;
+    font-size: 2rem;
     color: white;
     margin-bottom: 10px;
     text-align: center;
-    line-height: 1.9rem;
+    line-height: 2rem;
 }
 
 /*-------------------------------------------- End Service Section -----------------------------------*/
 
 /*----------------------------------------------- Projects Section ------------------------------------------*/
 #projects{
-    background-color: #F7F7F2;
+    background-color: #f2f1ef;
 }
 
 #projects .projects{
@@ -474,11 +489,13 @@ p{
     padding: 30px;
     flex-basis: 50%;
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    /* background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); */
+    background-color: #a37c82;
     color: white;
 }
 
@@ -488,18 +505,20 @@ p{
 }
 
 #projects .project-info h2{
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 500;
     margin-top: 10px;
 }
 
 #projects .project-info p{
     color: white;
+    font-size: 1.7rem;
 }
 
 #projects .project-img{
     flex-basis: 50%;
     height: 300px;
+    width: 100%;
     overflow: hidden;
     position: relative;
 }
@@ -511,7 +530,7 @@ p{
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-image: linear-gradient(60deg, #29323cd2 0%, #485563c4 100%);
     opacity: .7;
 }
 
@@ -528,7 +547,7 @@ p{
 
 /*------------------------------------------ Contact Section ----------------------------------------*/
 #contact{
-    background-color: #F7F7F2;
+    background-color: #f2f1ef;
 }
 
 #contact .contact{
@@ -573,7 +592,7 @@ p{
 }
 
 #contact .contact-info h2{
-    font-size: 1.3rem;
+    font-size: 1.9rem;
     line-height: 2rem;
     font-weight: 500;
 }
@@ -581,7 +600,7 @@ p{
 
 /*----------------------------------- Footer ----------------------------------------*/
 #footer{
-    background-color: black;
+    background-color: #22161c;
 }
 
 #footer .footer{
@@ -657,7 +676,7 @@ p{
 }
 @keyframes text_reveal_name{
     100%{
-        color: rgba(209, 161, 149, 0.747);
+        color: #a37c82;
         font-weight: 500;
     }
 }
@@ -727,7 +746,7 @@ p{
         top: 34px;
         height: 98%;
         width: 98%;
-        border: 10px solid rgba(209, 161, 149, 0.747);
+        border: 10px solid #a37c82;
         ;
     }
 
@@ -802,7 +821,7 @@ p{
         display: inline-block;
     }
     #header .nav-list ul li a{
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     #header .nav-list ul a:after{
         display: none;
